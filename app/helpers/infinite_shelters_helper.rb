@@ -1,0 +1,2 @@
+module InfiniteSheltersHelper
+end

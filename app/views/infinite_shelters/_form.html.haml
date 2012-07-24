@@ -1,0 +1,10 @@
+= form_for @infinite_shelter do |f|
+  -if @infinite_shelter.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@infinite_shelter.errors.count, "error")} prohibited this infinite_shelter from being saved:"
+      %ul
+        - @infinite_shelter.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'
