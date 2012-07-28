@@ -1,0 +1,22 @@
+%header{:class => "navbar navbar-fixed-top"}
+	%div.navbar-inner
+		%div.container
+			= link_to image_tag("is_logo.png"), root_path
+			%nav
+				%ul{:class => "nav pull-right"}
+					%li 
+						= link_to "Home", root_path
+					%li 
+						= link_to "Tag", tag_path
+					%li 
+						= link_to "Gallery", gallery_path
+					%li 
+						= link_to "Article", article_path
+					%li 
+						= link_to "Aphorism", '#'
+					%li 
+						= link_to "People", '#'
+					%li 
+						= link_to "City", '#'
+					%li 
+						= link_to "New", '#'
