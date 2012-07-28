@@ -1,9 +1,11 @@
 !!!
 %html
-%head
-  %title LizzaCollab
-  = stylesheet_link_tag :application
-  = javascript_include_tag :application
-  = csrf_meta_tags
-
-= yield
+	%head
+		%title LizzaCollab
+		= stylesheet_link_tag :application
+		= javascript_include_tag :application
+		= csrf_meta_tags
+		= render 'layouts/shim'
+	%body
+		= render 'layouts/header'
+		= yield

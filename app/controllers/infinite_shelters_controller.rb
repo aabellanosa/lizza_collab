@@ -9,6 +9,19 @@ class InfiniteSheltersController < ApplicationController
 
   end
 
+  def tag
+
+  end  
+
+  def gallery
+
+  end
+
+  def article
+
+  end  
+
+
   # GET /infinite_shelters/1
   # GET /infinite_shelters/1.json
   def show

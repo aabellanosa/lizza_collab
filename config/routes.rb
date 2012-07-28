@@ -4,6 +4,9 @@ LizzaCollab::Application.routes.draw do
   root to: 'infinite_shelters#index'
 
   match '/venue', to: 'infinite_shelters#venue'
+  match '/tag', to: 'infinite_shelters#tag'
+  match '/gallery', to: 'infinite_shelters#gallery'
+  match '/article', to: 'infinite_shelters#article'
 
   
   #match '/help',    to: 'static_pages#help'
