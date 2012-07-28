@@ -7,8 +7,10 @@ LizzaCollab::Application.routes.draw do
   match '/tag', to: 'infinite_shelters#tag'
   match '/gallery', to: 'infinite_shelters#gallery'
   match '/article', to: 'infinite_shelters#article'
-
-  
+  match '/aphorism', to: 'infinite_shelters#aphorism'
+  match '/people', to: 'infinite_shelters#people'
+  match '/city', to: 'infinite_shelters#city'
+  match '/new', to: 'infinite_shelters#new'
   #match '/help',    to: 'static_pages#help'
   #match '/about',   to: 'static_pages#about'
   #match '/contact', to: 'static_pages#contact'
