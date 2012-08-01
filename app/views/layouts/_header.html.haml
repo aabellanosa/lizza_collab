@@ -1,22 +1,28 @@
-%header{:class => "navbar navbar-fixed-top"}
-	%div.navbar-inner
-		%div.container
-			= link_to image_tag("is_logo.png"), root_path
-			%nav
-				%ul{:class => "nav pull-right"}
-					%li 
-						= link_to "Home", root_path
-					%li 
-						= link_to "Tag", tag_path
-					%li 
-						= link_to "Gallery", gallery_path
-					%li 
-						= link_to "Article", article_path
-					%li 
-						= link_to "Aphorism", aphorism_path
-					%li 
-						= link_to "People", people_path
-					%li 
-						= link_to "City", city_path
-					%li 
-						= link_to "New", new_path
+%header
+	%div.container
+		= link_to image_tag("is_logo.png"), root_path
+		%nav{:id => "main-nav"}
+			%ul
+				%li{:class => "first"}
+					= link_to "Home", root_path
+				%li 
+					= link_to "Tag", tag_path
+				%li 
+					= link_to "Gallery", gallery_path
+				%li 
+					= link_to "Article", article_path
+				%li 
+					= link_to "Aphorism", aphorism_path
+				%li 
+					= link_to "People", people_path
+				%li 
+					= link_to "City", city_path
+				%li{:class => "last"} 
+					= link_to "New", new_path
+		%nav{:id => "user-menu"}
+			%ul
+				%li
+					= link_to "Register", root_path
+				%li{:class => "last"}
+					= link_to "Login", root_path
+
